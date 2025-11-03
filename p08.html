@@ -3,110 +3,274 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>PO9 — Studio Drift presentatie</title>
+<title>PO8 — Ontwerp voor alle breinen</title>
 <style>
 body {
-margin: 0;
-font-family: Arial, sans-serif;
-background-color: #0b1d3a;
-color: #f5f5f5;
-line-height: 1.6;
-display: flex;
-flex-direction: column;
-min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0b1d3a;
+  color: #f5f5f5;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 header {
-padding: 20px;
-text-align: center;
-background: #0d2547;
+  padding: 20px;
+  text-align: center;
+  background: #0d2547;
 }
-header h1 {
-margin: 0;
-font-size: 28px;
-}
+header h1 { margin: 0; font-size: 28px; }
 main {
-flex: 1;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-padding: 0 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
-section {
-max-width: 800px;
-margin-bottom: 40px;
-width: 100%;
-}
-h2 {
-color: #4fc3f7;
-margin-top: 0;
-font-size: 22px;
-}
+section { max-width: 900px; margin-bottom: 24px; width: 100%; }
+h2 { color: #4fc3f7; margin-top: 0; font-size: 22px; }
 .reflectie-box {
-background-color: #112a54;
-border-radius: 10px;
-padding: 20px;
-font-size: 18px;
-text-align: left;
-color: #f5f5f5;
+  background-color: #112a54;
+  border-radius: 10px;
+  padding: 18px;
+  font-size: 16px;
+  text-align: left;
+  color: #f5f5f5;
+  overflow: auto;
+}
+.reflectie-box p { margin: 0 0 10px 0; }
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 10px;
+}
+/* larger, side-by-side variations */
+.image-grid.grid-4 img { max-width: calc(25% - 8px); }   /* 4 naast elkaar */
+.image-grid.grid-6 img { max-width: calc(16.666% - 8px); } /* 6 naast elkaar */
+
+.image-grid img {
+  /* fallback default (kept for other grids) */
+  max-width: calc(33.333% - 8px);
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
 }
 a.button {
-display: inline-block;
-padding: 14px 24px;
-background: #4fc3f7;
-color: #0b1d3a;
-text-decoration: none;
-border-radius: 6px;
-font-weight: bold;
-font-size: 18px;
-margin-top: 20px;
+  display: inline-block;
+  padding: 12px 20px;
+  background: #4fc3f7;
+  color: #0b1d3a;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 12px;
 }
-footer {
-text-align: center;
-padding: 20px;
-font-size: 13px;
-color: #b0b8c6;
+footer { text-align: center; padding: 20px; font-size: 13px; color: #b0b8c6; }
+@media (max-width:900px) {
+  /* mobiel: maak het minder kolommen zodat foto's niet te klein worden */
+  .image-grid.grid-4 img { max-width: calc(50% - 8px); }   /* 2 naast elkaar op mobiel */
+  .image-grid.grid-6 img { max-width: calc(50% - 8px); }   /* 2 naast elkaar op mobiel */
+  .image-grid img { max-width: calc(50% - 8px); }
 }
 </style>
 </head>
 <body>
 <header>
-<h1>PO8 - Ontwerp voor alle breinen</h1>
-<p>"Ontwerp een object voor alle breinen"</p>
+  <h1>PO8 - Ontwerp voor alle breinen</h1>
+  <p>"Ontwerp een object voor alle breinen"</p>
 </header>
 
 <main>
 <section>
-<h2>Onderzoek</h2>
-<div class="reflectie-box">
-<p>We hebben eerst nagedacht welke doelgroep we zouden kiezen. Wij zijn dus begonnen met interviews en brainstorms, waaronder 2 mindmaps.</p>
-<p>Deze interviews zijn gedaan door mijn andere groepsgenoten. Uit die interviews kan je heel erg veel informatie halen over de verschillende soorten neurodiversiteiten. Met die informatie konden wij goed beslissen welke doelgroep wij wilden kiezen. We hebben uiteindelijk gekozen voor de doelgroep autisme, in de leeftijd van 12 tot 18 jaar, op en buiten school.</p>
-<p>Wij hebben voor de autisme doelgroep eerst schetsen gemaakt en dit hielp goed met het uitkiezen van de zintuigen. De zintuigen zijn dus tastzin, geur en zicht geworden. Voor deze zintuigen hebben wij 3D-tekeningen gemaakt en 2 low fidelity objecten, 1 ge-3dprint en 1 genaaid object.</p>
-<p>Het eindobject is door Hannah genaaid. Er zit zacht stof in zodat je het kan slaan en knijpen enzovoort. Het heeft een eucalyptus geur zodat het kalmerend is. Er zitten op de bovenkant ook zuignappen, zodat je het op verschillende dingen kan vast plakken.</p>
-<h2>Reflectie</h2>
-<p>Alhoewel we redelijk veel tijd hadden, vind ik dat ik er tijdens sommige lessen te weinig aan gewerkt heb. Achteraf gezien had ik vaker kunnen vragen wat ik nog meer kon doen. Ik vind het vervelend dat ik in de lessen te weinig gedaan heb. Ik had zelf liever meer willen doen. Toch blijkt had ik in een korte periode voor de opdracht wel de kleine 3-d print, de naboots schets en de informatie die ik mezelf moest zoeken, af had. De grote 3D-print en mijn website heb ik het laatste moment af.</p>
-<p>Ik moest deze keer niet met vrienden, maar andere klasgenoten een project maken. Toch liep het project over het algemeen wel soepel. Het overleg met de klasgenoten ging goed. We hebben duidelijke afspraken gemaakt. Alhoewel ik toch meer had willen doen. Het was project was makkelijk te volgen (in vergelijking met PO9). Ik vond het wel lastig om twee projecten door elkaar te maken.</p>
-<p>Ik ben tevreden over het product. Hannah en Dounia hebben het heel netjes genaaid. Daar hebben ze heel goed hun best voor gedaan.</p>
-<p>Het low fedelity item was eerst wat te klein, dus die hebbe we vergroot van 4 naar 15 cm. Dit ziet er een stuk beter uit. Ik ben er redelijk tevreden mee.</p>
-</div>
+  <h2>Opdracht</h2>
+  <div class="reflectie-box">
+    <p>OPDRACHT: maak een object voor iemand met een bepaald breinprofiel</p>
+    <p>Voor deze opdracht moesten we een object maken voor mensen van verschillende breinprofielen.</p>
+  </div>
 </section>
 
 <section>
-<a href="https://commanderijcollege-my.sharepoint.com/:w:/r/personal/115006_jvbcollege_nl/_layouts/15/Doc.aspx?sourcedoc=%7B87FF2DF0-C375-4DEA-BE96-1D76255764D0%7D&file=PO8%20Ontwerp%20voor%20alle%20breinen.docx&action=default&mobileredirect=true&DefaultItemOpen=1" class="button" target="_blank">Werkdocument</a>
+  <h2>Onderzoek</h2>
+  <div class="reflectie-box">
+    <p>We hebben eerst nagedacht welke doelgroep we zouden kiezen. Om een goede keuze te maken zijn wij begonnen met interviews en brainstorms, waaronder 2 mindmaps om een goed idee te kunnen krijgen. Ik heb informatie gezocht over autisme en een van de mindmaps heb ik gemaakt.</p>
+    <p>Deze interviews zijn gedaan door mijn andere groepsgenoten. Uit die interviews kan je heel erg veel informatie halen over de verschillende soorten neurodiversiteiten. Met die informatie konden wij goed beslissen welke doelgroep wij wilden kiezen. We hebben uiteindelijk gekozen voor de doelgroep autisme, in de leeftijd van 12 tot 18 jaar, op en buiten school.</p>
+    <p>Wij hebben van het object dat we wilden maken voor de autisme doelgroep eerst schetsen gemaakt. Dit hielp goed met het uitkiezen van de “zintuigen” die belangrijk waren. De zintuigen zijn dus tastzin, geur en zicht geworden. Voor deze zintuigen hebben wij 3D-tekeningen gemaakt en 2 low fidelity objecten, 1 ge-3dprint en 1 genaaid object.</p>
+    <p>Ik heb het low fidelity object ontworpen. Het eindobject is door Hannah genaaid. Er zit zacht stof in zodat je het kan slaan en knijpen enzovoort. Het heeft een eucalyptus geur zodat het kalmerend is. Er zitten op de bovenkant ook zuignappen, zodat je het op verschillende dingen kan vast plakken.</p>
+  </div>
 </section>
 
 <section>
-<a href="https://commanderijcollege-my.sharepoint.com/:w:/r/personal/115006_jvbcollege_nl/_layouts/15/Doc.aspx?sourcedoc=%7BB9F20161-4943-464A-B105-69C4D4207B28%7D&file=Nabespreking%20document.docx&action=default&mobileredirect=true&DefaultItemOpen=1&wdOrigin=WAC.WORD.HOME-BUTTON%2CAPPHOME-WEB.FILEBROWSER.RECENT&wdPreviousSession=bff9517c-4dc6-f4cc-15b2-73d16216aefc&wdPreviousSessionSrc=Wac&ct=1762184518958" class="button" target="_blank">Nabespreking</a>
+  <h2>Marktonderzoek</h2>
+  <div class="reflectie-box">
+    <p>MARKTONDERZOEK (Dounia)</p>
+    <p>Link in:</p>
+    <p><a href="https://www.pinterest.com/dboudazdit/po9/?invite_code=350ba8c78ff84dddb323db055823cea4&sender=871657840287394949" target="_blank" style="color:#4fc3f7;">https://www.pinterest.com/dboudazdit/po9/</a></p>
+  </div>
 </section>
 
 <section>
-<a href="https://commanderijcollege-my.sharepoint.com/:w:/r/personal/113942_jvbcollege_nl/_layouts/15/Doc.aspx?sourcedoc=%7B77E4A78B-56FC-4710-82E5-44CC31F50505%7D&file=programma%20van%20eisen.docx&action=default&mobileredirect=true&DefaultItemOpen=1&wdOrigin=WAC.WORD.HOME-BUTTON%2CAPPHOME-WEB.FILEBROWSER.RECENT&wdPreviousSession=0d778c54-24be-439c-be9c-417da61c7a6f&wdPreviousSessionSrc=AppHomeWeb&ct=1762184563834" class="button" target="_blank">Programma van Eisen</a>
+  <h2>Brainstorms</h2>
+  <div class="reflectie-box">
+    <p>BRAINSTORMS (Dounia, Thijs & Yonah)</p>
+    <div class="image-grid">
+      <img src="1.webp" alt="brainstorm 1">
+      <img src="2.webp" alt="brainstorm 2">
+      <img src="3.webp" alt="brainstorm 3">
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Moodboard</h2>
+  <div class="reflectie-box">
+    <p>MOODBOARD (Dounia & Hannah)</p>
+    <div class="image-grid">
+      <img src="4.webp" alt="moodboard">
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Interviews (volledig)</h2>
+  <div class="reflectie-box">
+    <p>INTERVIEWS (Hannah)</p>
+    <p>Interview vragen gemaakt (Hannah):</p>
+    <ul>
+      <li>Wat zijn de effecten van jouw autisme/adhd/etc. op jouw school werk?</li>
+      <li>Hoe ben je erachter gekomen dat jij dit hebt?</li>
+      <li>Heb je het gevoel dat autisme/adhd/etc. je niet alles in leven laat doen?</li>
+      <li>Wat zijn sommige prikkelpunten waar je elke dag last van hebt?</li>
+      <li>Hoe voelt het om autisme/adhd/etc. te hebben?</li>
+      <li>Heb jij het gevoel dat autisme/adhd/etc. je maakt als een persoon?</li>
+      <li>Wat is een van de meest komende situatie waarbij je vaak last hebt?</li>
+      <li>Merk je dat je anders wordt gezien door jouw stoornis?</li>
+      <li>Hoe zou je jouw stoornis beschrijven?</li>
+      <li>Waar op school is jouw meeste prikkelpunt?</li>
+      <li>Is een product/hulpmiddel wat jou helpt met het ontspannen?</li>
+    </ul>
+
+    <h3>Daantje</h3>
+    <p>Ik merk dat ik dingen vaker uitstel en langer over dingen doe doordat ik sneller afgeleid raak. Maar ook is het vaak lastiger om leerstof te onthouden.</p>
+    <p>Het ging op school lastiger en mijn moeder, die docente is op het speciaal onderwijs, merkte dat ik veel symptomen had. Ik heb toen zelf aan mijn ouders gevraagd om een onderzoek te doen en daar kwam de diagnose ADHD uit.</p>
+    <p>Dat had ik in het begin van mijn diagnose wel, maar nu weet ik hoe ik met de lastige dingen om kan gaan.</p>
+    <p>Wat voor mij erg lastig is zijn de geluidjes om mij heen. Doordat ik in mijn hoofd geen "filter" heb kan iemand die zijn pen klikt aan de andere kant van de kamer net zo luid klinken als degene tegenover mij waarmee ik een gesprek aan het voeren ben. Ik heb hier nu wel medicatie voor wat mij weer een "filter" geeft.</p>
+    <p>Dat is lastig uit te leggen. Ik ben altijd al zo geweest, dus ik zou niet weten hoe het is om het niet te hebben. Maar soms heb ik het gevoel dat ik anders ben dan anderen erdoor. Doordat ik sociaal soms wat drukker ben waar mensen zich ook aan kunnen irriteren.</p>
+    <p>Toen ik net mijn diagnose had dacht ik dat ik alleen ADHD was, dat ADHD alles was wat ik was. Maar nu weet ik dat het maar een klein deel van mij is.</p>
+    <p>Het snel overprikkeld raken en mijn sociale batterij die snel opgaat, vooral als mijn medicatie uit begint te werken.</p>
+    <p>Nee, het is eerder dat ik zelf denk dat ik anders ben erdoor, dan dat anderen dat ook echt denken.</p>
+    <p>Alle Dagen Heel Druk, en ja dit is natuurlijk een grap maar het is ook wel echt zo. Het is een stoornis die ervoor zorgt dat mijn hoofd nooit rustig is, wat eindigt in dat ik heel veel dingen wil, maar eigenlijk niks goed afkrijg of binnenkrijg.</p>
+    <p>De aula.</p>
+    <p>Fidgets, deze heb ik thuis wel maar neem ze niet mee naar school. Op school heb ik meestal crystallen in mijn zak wat mij een veilig/rustig gevoel geeft.</p>
+
+    <h3>Kyara</h3>
+    <p>Op school merk ik dat ik meer moeite heb met opletten, vooral als er mensen luidruchtig zijn. Het zijn de kleine dingen zoals tikken met een pen waar ik al snel afgeleid door raak. Ook merk ik dat ik snel overprikkeld raak door de drukte en dat ik dan helemaal dicht val. Ik kan dan niets meer omdat het te druk is in mijn hoofd.</p>
+    <p>Door een test vanuit de ggz.</p>
+    <p>Jazeker. Door mijn autisme merk ik dat ik veel focus leg op de kleine dingen, zelfs als ze niet eens belangrijk zijn. Ik merk dat als iemand een opmerking maakt waar ik niet blij van wordt dan blijf ik daar in hangen en zit ik daar dagen lang mee. Dat heeft invloed op mijn dagelijkse leven. Op dit moment voel ik me heel alleen door alles wat er gebeurd op school, dat zorgt er ook voor dat ik minder hard probeer en sneller in paniek raak thuis/op school. Zoals eerder is gezegd raak ik snel afgeleid door kleine dingen (zoals het tikken met een pen) waardoor ik dan niets meer kan doen. Het klinkt heel raar 'hoezo kan je niets doen als iemand geluid aan het maken is?' Ik heb echt moeite met de meest simpele dingen dan, zoals lezen, als iemand vervelende geluiden aan het maken is ben ik daar meer op gefocused dan op de tekst en lukt het niet meer om de simpele dingen te doen.</p>
+    <p>De pauzes op school. Het is daar veel te druk en dan sluit ik me helemaal af van de rest omdat ik te veel last heb van de prikkels daar. Eten bij opa & oma, het is heel gezellig daar, maar ze maken snel ruzie. Dat zorgt ervoor dat ze gaan schreeuwen, waardoor mijn vader en weer overheen gaat schreeuwen in de hoop dat ze dan stoppen.</p>
+    <p>Heel erg heb ik geen idee. Ik ben niet anders gewend, dus ik kan ook niet zeggen hoe het is als 'normaal' persoon.</p>
+    <p>Ja en nee. Voor ik wist dat ik autisme had was ik hetzelfde als hoe ik nu ben. Dus in dat opzicht heeft de diagnose me niet veranderd als persoon, het heeft wel duidelijkheid gegeven over waarom ik soms dingen anders doe of anders opvat als andere mensen. Ik kan niet zeggen dat autisme de reden is waarom ik zo ben en dat het mij maakt als persoon, maar ik kan wel zeggen dat ik door mijn autisme wel iets anders ben dan de 'standaard' personen.</p>
+    <p>Pauzes op school. Het is dan veel te druk en er zijn te veel prikkels. Aangezien ik 5 dagen in de week naar school ga en dan 2 pauzes heb is dat best een vaak voorkomende situatie.</p>
+    <p>Ja en nee. Door de docenten op school wordt ik wel echt anders bekeken dan voor mijn diagnose. Maar de mensen die echt belangrijk zijn voor me (vrienden en familie) die geven er echt niets om. Met of zonder diagnose blijf je namelijk hetzelfde persoon voor hun.</p>
+    <p>Als een mooi obstakel in je leven. Het is echt prachtig om 'anders' te zijn dan de rest, maar de diagnose autisme kan je leven op sommige vlakken wel moeilijker maken dan voor de 'normale' mensen.</p>
+    <p>Pauze.</p>
+    <p>Mijn koptelefoon. Mijn koptelefoon helpt me echt om me even af te sluiten van de drukte om me heen en helpt me te focussen op mijn eigen emoties en gevoelens in plaats van die van een ander.</p>
+
+    <h3>Danielle</h3>
+    <p>Dyslectie: ik schrijf vaak met spelfouten.</p>
+    <p>Via de basisschool — taal ging moeilijker dan gemiddelde leerling in mijn klas.</p>
+    <p>Nee, het stoort me niet.</p>
+    <p>Over de dag voel ik der niks van of merk ik t niet, alleen als mensen het merken en zeggen dat je iets niet goed doet of schrijft.</p>
+    <p>Het hoort wel bij mij vind ik.</p>
+    <p>Dat op toetsen ik altijd punten der af heb en nooit voor een 10 kan gaan.</p>
+    <p>Nee, pas wanneer het opvalt bij mensen helpen ze me graag maar ze gaan me niet anders behandelen.</p>
+    <p>Ik stuggle met schrijven en met andere talen is moeilijker voor me.</p>
+    <p>Nergens.</p>
+    <p>Niks.</p>
+
+    <h3>Ivy</h3>
+    <p>Dat ik snel afgeleid word en dat ik vaak gewoon overprikkeld word door de hoeveelheid van alles wat me dicht lijmt eigenlijk. En als er iets veranderd op school is het ook heel kut voor mij, bijvoorbeeld toen met die mobieltjes, dat was een grote verandering en dat vond ik echt zo kut.</p>
+    <p>Hebben vroeger toen ik heel klein was een test gedaan. Ouders hebben het me later verteld. Ouders deden test omdat ik altijd zo stil was en anders reageerde dan normale mensen.</p>
+    <p>Nee.</p>
+    <p>Te veel/hard geluid. Mensen die door elkaar heen praten.</p>
+    <p>Kut, tja weet je, ik weet niet hoe het voelt om het niet te hebben dus ik kan er eigenlijk niet echt een vergelijking of iets mee maken. Ik kan het niet echt uitleggen.</p>
+    <p>Nee, ik heet niet autisme. Ik ben ook niet autisme, ik ben gwn Ivy.</p>
+    <p>Mensen die door elkaar heen praten.</p>
+    <p>Soms wel, docenten gaan dan ineens liever doen ofzo en vragen bla bla bla. Meestal hebben de kinderen het niet door.</p>
+    <p>Raar.</p>
+    <p>In de klas als ik m'n huiswerk probeer te maken en iedereen die keihard er doorheen kletst.</p>
+    <p>Muziek, vooral akoestische muziek zoals piano.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Schetsen</h2>
+  <div class="reflectie-box">
+    <p>SCHETSEN (Allen)</p>
+    <div class="image-grid">
+      <img src="5.webp" alt="schets 1">
+      <img src="6.webp" alt="schets 2">
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Eindresultaat (low/high fidelity)</h2>
+  <div class="reflectie-box">
+    <p>EINDRESULTAAT (LOW FIDELITY / HIGH FIDELITY)</p>
+
+    <h4 style="color:#a9d8f7; margin:10px 0 6px 0;">Low fidelity</h4>
+    <div class="image-grid grid-4" aria-label="Low fidelity images">
+      <img src="7.webp" alt="low fidelity 7"></figure>
+      <img src="8.webp" alt="low fidelity 8"></figure>
+      <img src="9.webp" alt="low fidelity 9"></figure>
+      <img src="10.webp" alt="low fidelity 10"></figure>
+    </div>
+
+    <h4 style="color:#a9d8f7; margin:16px 0 6px 0;">High fidelity</h4>
+    <div class="image-grid grid-6" aria-label="High fidelity images">
+      <img src="11.webp" alt="high fidelity 11"></figure>
+      <img src="12.webp" alt="high fidelity 12"></figure>
+      <img src="13.webp" alt="high fidelity 13"></figure>
+      <img src="14.webp" alt="high fidelity 14"></figure>
+      <img src="15.webp" alt="high fidelity 15"></figure>
+      <img src="16.webp" alt="high fidelity 16"></figure>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Reflectie</h2>
+  <div class="reflectie-box">
+    <p>Alhoewel we redelijk veel tijd hadden, vind ik dat ik er tijdens sommige lessen te weinig aan gewerkt heb. Achteraf gezien had ik vaker kunnen vragen wat ik nog meer kon doen. Ik vind het vervelend dat ik in de lessen te weinig gedaan heb. Ik had zelf liever meer willen doen. Toch blijkt dat ik in een korte periode voor de opdracht wel de kleine 3-d print, de naboots schets en de informatie die ik zelf moest zoeken, af had. De grote 3D-print en mijn website heb ik het laatste moment afgemaakt.</p>
+    <p>Ik moest deze keer niet met vrienden, maar met andere klasgenoten een project maken. Toch liep het project over het algemeen wel soepel. Het overleg met de klasgenoten ging goed. We hebben duidelijke afspraken gemaakt. Alhoewel ik toch meer had willen doen. Het was project was makkelijker te volgen (in vergelijking met PO9). Ik vond het wel lastig om twee projecten door elkaar te maken.</p>
+    <p>Het low fidelity item was eerst wat te klein, dus die hebben we vergroot van 4 naar 15 cm. Dit ziet er een stuk beter uit. Ik ben er redelijk tevreden mee. Ik ben tevreden over het product. Hannah en Dounia hebben het heel netjes genaaid. Daar hebben ze heel goed hun best voor gedaan.</p>
+    <p>De website laadde eerst mijn teksten en foto’s niet. Ik heb dit opgelost. De website van mij en mijn klasgenoten lijken natuurlijk op elkaar, omdat we er samen aan gewerkt hebben. Het voornaamste verschil zit hem in de inleiding en de reflectie en de indeling van de website. Ik heb deze keer niet gesproken met een ander over de reflectie, zodat hij niet op die van een ander kan lijken.</p>
+  </div>
+</section>
+
+<!-- keep the original external document links (unchanged) -->
+<section>
+  <a href="https://commanderijcollege-my.sharepoint.com/:w:/r/personal/115006_jvbcollege_nl/_layouts/15/Doc.aspx?sourcedoc=%7B87FF2DF0-C375-4DEA-BE96-1D76255764D0%7D&file=PO8%20Ontwerp%20voor%20alle%20breinen.docx&action=default&mobileredirect=true&DefaultItemOpen=1" class="button" target="_blank">Werkdocument</a>
+</section>
+
+<section>
+  <a href="https://commanderijcollege-my.sharepoint.com/:w:/r/personal/115006_jvbcollege_nl/_layouts/15/Doc.aspx?sourcedoc=%7BB9F20161-4943-464A-B105-69C4D4207B28%7D&file=Nabespreking%20document.docx&action=default&mobileredirect=true&DefaultItemOpen=1&wdOrigin=WAC.WORD.HOME-BUTTON%2CAPPHOME-WEB.FILEBROWSER.RECENT&wdPreviousSession=bff9517c-4dc6-f4cc-15b2-73d16216aefc&wdPreviousSessionSrc=Wac&ct=1762184518958" class="button" target="_blank">Nabespreking</a>
+</section>
+
+<section>
+  <a href="https://commanderijcollege-my.sharepoint.com/:w:/r/personal/113942_jvbcollege_nl/_layouts/15/Doc.aspx?sourcedoc=%7B77E4A78B-56FC-4710-82E5-44CC31F50505%7D&file=programma%20van%20eisen.docx&action=default&mobileredirect=true&DefaultItemOpen=1&wdOrigin=WAC.WORD.HOME-BUTTON%2CAPPHOME-WEB.FILEBROWSER.RECENT&wdPreviousSession=0d778c54-24be-439c-be9c-417da61c7a6f&wdPreviousSessionSrc=AppHomeWeb&ct=1762184563834" class="button" target="_blank">Programma van Eisen</a>
 </section>
 </main>
 
 <footer>
-    © 2025 — Yonah de Leeuwe
+  © 2025 — Yonah de Leeuwe
 </footer>
 </body>
 </html>
